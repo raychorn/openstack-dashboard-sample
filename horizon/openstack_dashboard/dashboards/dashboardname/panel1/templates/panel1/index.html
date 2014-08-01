@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Sample Panel" %}{% endblock %}
+
+{% block page_header %}
+    {% include "horizon/common/_page_header.html" with title=_("Sample Panel") %}
+{% endblock page_header %}
+
+{% block main %}
+    {% comment %}
+    <div class="row-fluid">
+        <div class="span12">
+            {{ tab_group.render }}
+        </div>
+    </div>
+    {% endcomment %}
+{% endblock %}
