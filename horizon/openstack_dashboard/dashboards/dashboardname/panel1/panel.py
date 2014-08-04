@@ -18,11 +18,11 @@
 from django.utils.translation import ugettext_lazy as _
 
 import horizon
-from openstack_dashboard.dashboards.dnsaas import dashboard
+from openstack_dashboard.dashboards.dashboardname import dashboard
 
 class Panel1(horizon.Panel):
     name = _("Panel1")
     slug = 'panel1'
     permissions = ('openstack.services.network',)
 
-dashboard.Dnsaas.register(Panel1)
+dashboard.DashboardName.register(Panel1)

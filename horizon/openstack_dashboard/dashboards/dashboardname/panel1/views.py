@@ -33,7 +33,7 @@ LOG = logging.getLogger(__name__)
 
 
 class DefaultIndexView(tables.DataTableView):
-    template_name = 'dnsaas/panel1/index.html'
+    template_name = 'dashboard/panel1/index.html'
 
     def get_data(self):
         return []
@@ -45,5 +45,5 @@ class IndexTabGroup(tabs.TabGroup):
 
 
 class IndexView(tables.MultiTableView):
-    template_name = 'dnsaas/panel1/index.html'
+    template_name = 'dashboard/panel1/index.html'
 
